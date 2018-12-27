@@ -1,0 +1,276 @@
+<html>
+   <head>
+      <title>kc santosh</title>
+      <link rel="stylesheet" href="css/bootstrap/dist/css/bootstrap.css">
+      <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Proxima Nova">
+      <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Ubuntu:regular,bold&subset=Latin">
+      <link rel="stylesheet" type="text/css" href="css/main.css">
+      <!-- 1. Load libraries -->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+      <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js"></script>
+      <script>
+         $(document).ready(function(){
+         
+             
+        // $(".contentdiv").hide();
+        $("#homecontent").show();
+         
+         $('.nav-tabs a').click(function(){
+             $(this).tab('show');
+         
+         });
+         
+             var captionText = $("#caption");
+             $(".imgtalk").click(function () {
+                 $("#myModal").css("display","block");
+                 $("#img01").attr("src",this.src);
+                 //captionText.innerHTML = this.alt;
+             });
+         
+         
+         
+             // Get the <span> element that closes the modal
+         
+         
+             // When the user clicks on <span> (x), close the modal
+             $(".close").click(function() {
+                 $("#myModal").css("display","none");
+             });
+         
+         //slider();
+         
+         $(".leftmenucls li").on("click", function(e) {//630 422 7482
+         
+             var contenttext = $(this).attr("data-content");
+             $(".leftmenucls li").removeClass("active");
+             $(this).addClass("active");
+             $(".respcontentdiv").load(contenttext+'.html');
+             //$(".contentdiv").hide();
+             //$("#"+contenttext+"content").show();
+         });
+         
+         })
+         
+         
+         
+      </script>
+   </head>
+   <!-- 3. Display the application -->
+   <body>
+      <div class="container">
+         <div class="row">
+            <div class="col-md-12" style="background-color:#ededed; margin-top:60px; opacity:0.9;">
+               <span style="padding:0px; font-size:32px; color: #990000"><b>KC Santosh, PhD</b></span><br>
+               <span style=" font-size: 24px;">Assistant Professor & Graduate Program Coordinator </span>
+            </div>
+         </div>
+      </div>
+      <div class="container" style="padding-top:20px; background-color:#fff;opacity:0.9;">
+         <div class="row">
+            <div class="col-md-3" style="background-color:#fff;">
+               <div class="container-fluid" style="margin:0; padding:0;">
+                  <div class="row">
+                     <div class="col-md-12" style="margin-top:10px;">
+                        <img src="images/kcs-oct2017.jpg" width="300" height="auto" class="img-responsive">
+                     </div>
+                     <div class="col-md-12 rightlist_logo" style="margin-top:20px; font-size:16px;" >
+                        <span><b>Dept. of Computer Science, USD</b></span><br>
+                        <span>Email: <a href="mailto:santosh.kc@usd.edu">santosh.kcATusd.edu</a></span><br>
+                        <span>Phone: (605) 677-5390</span><br>
+                        <ul>
+                           <li><a href="http://www.usd.edu/faculty-and-staff/Santosh-Kc" target="_blank"><img src="images/footer_usd.png" width="35" height="auto"></a></li>
+                           <li>
+                              <a href="https://www.researchgate.net/profile/KC_Santosh" target="_blank"><img src="images/footer_rg.png" width="35" height="auto">
+                              <a href="https://www.researchgate.net/profile/KC_Santosh" target="_blank">
+                           </li>
+                           <li><a href="http://dblp.uni-trier.de/pers/ht/s/Santosh:K=_C=" target="_blank"><img src="images/footer_dblp.png" width="35" height="auto"></a></li>
+                           <li><a href="https://scholar.google.com/citations?user=luPx18QAAAAJ&hl=en" target="_blank"><img src="images/footer_gs_logo.png" width="35" height="auto"></a></li>
+                           <li><a href="http://orcid.org/0000-0003-4176-0236" target="_blank"><img src="images/footer_orcid_logo.png" width="35" height="auto"></a></li>
+                           <li><a href="https://www.linkedin.com/in/santoshkc" target="_blank"><img src="images/footer_linkedin.png" width="35" height="auto"></a></li>
+                        </ul>
+                     </div>
+                     <div style="clear:both;"></div>
+                     <hr>
+                  </div>
+               </div>
+               <ul class="nav nav-pills nav-stacked leftmenucls">
+                  <li data-content="home" class="active"><a id="home" >Home</a></li>
+                  <li data-content="projects"><a id="projects">Research areas, grants & group</a></li>
+                  <li data-content="research"><a id="research">Publications and theses (supervision)</a></li>
+                  <li data-content="talks"><a id="talks">Research talks</a></li>
+                  <li data-content="teaching"><a id="teaching">Teaching </a></li>
+                  <li data-content="services"><a id="services">Services (academic/scientific)</a></li>
+                  <li data-content="affiliations"><a id="affiliations">Affiliations (previous)</a></li>
+                  <li data-content="collabIO" style="border-bottom:none;"><a id="collabIO">Collaborations (in and out)</a></li>
+                  <li data-content="USDcontact"><a id="USDcontact">Want to join me @ the USD</a></li>
+               </ul>
+            </div>
+            
+            
+            
+            <div class="col-md-9">
+               <div class="container-fluid">
+                  <div class="row">
+                     <div class="respcontentdiv" style="background-color:#fff !important;">
+                       
+                       <div id="homecontent" class="contentdiv" style="background-color:#fff !important;">
+                        <div class="col-md-12" style="margin-bottom:15px;">
+                           <span style=" font-size: 28px;">Bio (quick)</span><br>
+                           <p> Dr. KC has been employed at the University of South Dakota (USD) as an Assistant Professor since 2015. Dr. KC currently serves as the Graduate Program Coordinator (GPC) for the department of computer science. In addition, Dr KC serves on the Arts & Sciences Curriculum and Instruction (ASCI) committee, and the Council for Undergraduate Research & Creative Scholarship (CURCS) committee. Before joining USD, Dr. KC worked as a research fellow at the 
+                              <a href="https://www.nlm-nih.gov" target="_blank">U.S. National Library of Medicine (NLM)</a>, 
+                              <a href="https://www.nih.gov" target="_blank">National Institutes of Health (NIH)</a>. 
+                              He worked as a postdoctoral research scientist at the <a href="https://www.loria.fr" target="_blank">LORIA research centre</a>, 
+                              <a href="http://www.univ-lorraine.fr" target="_blank">Universite de Lorraine</a> in direct collaboration with industrial partner 
+                              <a href="http://www.itesoft.com" target="_blank">ITESOFT</a>, France. He also worked as a research scientist at the 
+                              <a href="https://www.inria.fr/en/centre/nancy" target="_blank">INRIA Nancy Grand Est research centre</a>, 
+                              France, where he has received his <u>PhD diploma in computer science (just in 3 years)</u>. 
+                              Before that, he worked as a graduate research scholar at the <a href="http://www.siit.tu.ac.th" target="_blank">SIIT</a>, 
+                              <a href="http://www.tu.ac.th/en/" target="_blank">Thammasat University</a>, Thailand. 
+                              Dr. KC has demonstrated expertise in pattern recognition, image processing, computer vision and machine learning with various 
+                              applications in handwriting recognition, graphics recognition, document information content exploitation, medical image analysis and 
+                              biometrics. Dr. KC published <u>more than 100 peer-reviewed research articles</u>, including a book section in encyclopedia of electrical and electronics engineering. Dr. KC edited a book entitled recent trends in image processing and pattern recognition: <a href="https://link.springer.com/book/10.1007/978-981-10-4859-3" target="_blank"> Communications in Computer and Information Science (CCIS) series, Vol. 709 (Springer)</a> and a research book (monographs) entitled Document Image Analysis: Current Trends and Challenges in Graphics Recognition to be published by Springer 2018.
+                              <br>  <br />
+                              Dr. KC is an <u>associate editor</u> of <a href="http://www.springer.com/engineering/computational+intelligence+and+complexity/journal/13042" target="_blank">International Journal of Machine Learning & Cybernetics (Springer)</a> and <a href="http://www.jprr.org/index.php/jprr" target="">Journal of Pattern Recognition Research</a>, serves on the editorial board member of <a href="http://springerplus.springeropen.com/">SpringerPlus</a>, <a href="http://www.igi-global.com/journal/international-journal-computer-vision-image/1181" target="_blank">International Journal of Computer Vision and Image Processing </a>, <a href="http://journal.frontiersin.org/journal/ict/section/computer-image-analysis" target="_blank">Frontiers in ICT: Computer Image Analysis</a>, <a href="http://journal.frontiersin.org/journal/digital-humanities/section/cultural-heritage-digitization" target="_blank">Cultural Heritage Digitization: Frontiers in Digital Humanities</a>, and served as a review panel for <a href="http://www.nserc-crsng.gc.ca/index_eng.asp" target="_blank">Natural Science and Engineering Research Councils (NSERC)</a> of Canada and <a href="https://www.nsf.gov" target="_blank">National Science Foundation (NSF)</a>. He is a regular reviewer for high quality journals (IEEE, Springer, Elsevier) and high quality conferences and workshops (sponsored by IEEE, IAPR and Springer) in the domain. In 2016, Dr. KC chaired the  <a href="http://rtip2r.org" target="_blank">International conference on Recent Trends in Image Processing & Pattern Recognition (RTIP2R)</a>.
+                              <br />
+                              <br />
+                              Dr. KC's <strong>research interests</strong> are <u>pattern recognition</u>, <u>computer vision</u>, <u>image analysis</u>, <u>machine learning</u>, <u>data mining</u>, <u>big data</u>. <br />
+                              <br />
+                           </p>
+                           <!--        <br />
+                              For more information, click: <a  id="projectscontent">Research areas, grants & projects</a> in the left column.</p>    
+                                                              -->
+                           <span style=" font-size: 28px;">News</span><br>
+                           <p>
+
+                           <ul>
+
+    <IMG src="images/book-coverS2017.png" style="width:150px;height:210px;" ALIGN= "RIGHT" HSPACE="7" VSPACE="5"/>
+                              
+                              <li> (<b>2018</b>)  <font color="red"><u>Book (research)</u></font>: <a href ="https://link.springer.com/book/10.1007%2F978-981-13-2339-3" target="_blank"> Document Image Analysis: Current Trends and Challenges in Graphics Recognition</a>, Springer, 2018.</li>
+                              
+<li> (<b>2018</b>) <font color="red"><u>Journal article</u></font>: A systematic review on orthopedic simulators for psycho-motor skill and surgical procedure training, <a href="https://link.springer.com/journal/10916" target="_blank">Journal of Medical Systems</a>, Springer</li>
+
+<li> (<b>2018</b>) <font color="red"><u>Journal article</u></font>: Feature Selection for Automatic Tuberculosis Screening in Frontal Chest Radiographs, <a href="https://link.springer.com/journal/10916" target="_blank">Journal of Medical Systems</a>, Springer</li>
+
+<li> (<b>2018</b>) <font color="red"><u>Journal article</u></font>: Line spectral frequency-based features and extreme learning machine for voice activity detection from audio signal, <a href="http://www.springer.com/engineering/signals/journal/10772" target="_blank">International Journal of Speech Technology</a>, Springer</li>
+
+<li> (<b>2018</b>) <font color="red"><u>Journal article</u></font>: Investigation of DNA discontinuity for detecting Tuberculosis <a href="https://link.springer.com/journal/12652" target="_blank">Journal of Ambient Intelligence and Humanized Computing, Springer.</a></li>
+
+<li> (<b>2018</b>) <font color="red"><u>Conference proceeding</u></font>: Instrumentals/songs separation for background music removal. <a href="https://www.springer.com/series/11156" target="_blank">Advances in Intelligent Systems and Computing (AISC), Springer (ITSRCP, 2018).</a></li>
+
+<li> (<b>2018</b>) <font color="red"><u>IEEE senior member</u></font>: Dr. KC designated IEEE senior member <a href="https://www.ieee.org" target="_blank"> (April, 2018).</a></li>
+
+
+<li> (<b>2018</b>) <font color="red"><u>Journal article</u></font>: Imperceptible watermark for a game-theoretic watermarking system <a href="https://link.springer.com/journal/13042" target="_blank">International Journal of Machine Learning & Cybernetics, Springer.</a></li>
+
+<li> (<b>2018</b>) <font color="red"><u>Journal article</u></font>: Handwritten Indic script identification in multi-script document images: A survey <a href="http://www.worldscientific.com/page/ijprai/aims-scope" target="_blank">International Journal of Pattern Recognition & Artificial Intelligence (IJPRAI), World Scientific.</a></li>
+    
+<li> (<b>2018</b>) <font color="red"><u>Journal article</u></font>: Extreme learning machine for handwritten Indic script identification in multi-script documents <a href="https://www.spiedigitallibrary.org/journals/journal-of-electronic-imaging?SSO=1" target="_blank">Journal of Electronic Imaging (JEI), SPIE.</a></li>
+    
+
+ <li> (<b>2018</b>) <font color="red"><u>Journal article</u></font>: Content independent writer identification on Bangla script: A document level approach. <a href="http://www.worldscientific.com/page/ijprai/aims-scope" target="_blank">International Journal of Pattern Recognition & Artificial Intelligence (IJPRAI), World Scientific.</a></li>
+
+
+<li> (<b>2018</b>)  <font color="red"> <u>Conference chair</u></font> of the <a href="http://rtip2r.org/2018" target="_blank">International Conference on Recent Trends in Image Processing and Pattern Recognition</a>(RTIP2R), Solapur University, India, December 21-22, 2018 (in collaboration with Universidade de Evora, Portugal and the University of South Dakota, USA).</li>
+
+ 
+ <li> (<b>2018</b>)  <font color="red"><u>Program committee</u></font> of <a href="http://www.icpr2018.org" target="_blank">ICPR 2018</a>, Beijing, China. </li>
+ 
+  <li> (<b>2018</b>)  <font color="red"><u>Program committee</u></font> of <a href="http://www.iccbb.org" target="_blank">ICCB 2018</a>, Politecnic di Bari, Italy. </li>
+
+ 
+ <li> (<b>2018</b>) <font color="red"><u>Journal article</u></font>: Angular relational signature-based chest radiograph image view classification. <a href="https://link.springer.com/article/10.1007%2Fs11517-018-1786-3" target="_blank">Medical & Biological Engineering & Computing (MBEC), Springer.</a></li>
+                           
+<li> (<b>2018</b>)  <font color="red"><u>Conference area chair</u></font> of <a href="http://www.iiitdmj.ac.in/CVIP-2018/" target="_blank">the 3rd International Conference on Computer Vision & Image Processing (CVIP)</a>, Indian Institute of Information Technology, India, September 29-October 01, 2018.</li>
+                           
+ <li> (<b>2018</b>) <font color="red"><u>Journal article</u></font>: Automated chest X-ray screening: Can lung region symmetry help detect pulmonary abnormalities?. <a href="http://ieeexplore.ieee.org/document/8116756/" target="_blank">IEEE Transactions on Medical Imaging.</a></li>
+
+ <li> (<b>2018</b>) <font color="red"><u>Conference proceeding</u></font>: Circle-like foreign element detection in chest x-rays using normalized cross-correlation and unsupervised clustering. <a href="http://spie.org/MI/conferencedetails/medical-image-processing" target="_blank">SPIE Medical Imaging.</a></li>
+
+                           
+<li> (<b>2018</b>)  <font color="red"><u>Conference chair</u></font> of the <a href="http://www.icict.co.uk/committees.php#tab1" target="_blank">International Congress on Information and Communication Technology</a> in concurrent with ICT Excellence Awards (ICICT 2018), London, UK, February 27-28, 2018.</li>
+
+<li> (<b>2017-2018</b>)  <font color="red"><u>Guest editor</u></font> of the special issue in <a href="http://www.springer.com/engineering/signals/journal/10772" target="_blank">International Journal of Speech Technology</a>, Springer: <u>Advances in Speech, Music and Audio Signal Processing</u> (to be published by June, 2018). Check the journal website for more detailed information.</li>
+
+                              <li> (<b>2018</b>)  <font color="red"><u>Program committee</u></font> of <a href="http://icpram.org/" target="_blank">ICPRAM 2018</a>, Madeira, Portugal. </li>
+                              
+                              <li> (<b>2018</b>)  <font color="red"><u>Program committee</u></font> of <a href="visapp.visigrapp.org/" target="_blank">VISAPP 2018</a>, Madeira, Portugal. </li>
+                              
+                              <li> (<b>2018</b>)  <font color="red"><u>Program committee</u></font> of <a href="http://www.bioimaging.biostec.org/" target="_blank">Bioimaging 2018</a>, Madeira, Portugal. </li>
+                            
+
+                            <li> (<b>2017</b>)  <font color="red"><u>International advisory committee</u></font> of the <a href ="http://www.hmiss.it" target="_blank">Human-Machine Interaction Summer School</a>, (HMISS), Maratea, Italy.</li> 
+
+                            <li> (<b>2017 - present</b>)  <font color="red"><u>Steering committee</u></font>  of the <a href="http://iapr.org/" target="_blank">IAPR</a>,  <a href ="http://iapr-tc10.univ-lr.fr/" target="_blank">Technical Committee 10 (TC-10): graphics recognition</a> (<u>dataset curator</u>). </li>
+                          
+                              
+                              <li> (<b>2017</b>)  <font color="red"><u>Guest editor</u></font> of the special issue in <a href ="https://www.degruyter.com/view/j/jisys" target="_blank"> Journal of Intelligent Systems, De Gruyter,</a> 2017: Handwritten Document Processing using Machine Learning (<u> to be published by 2018</u>). Check website, for submission details.</li>
+                             
+                              <li> (<b>2017</b>) <font color="red"><u>Journal article</u></font>: <a href="https://link.springer.com/article/10.1007/s13042-017-0702-8" target="_blank"> Automatic Indic script identification from handwritten documents: page, block, line and word-level approach.</a> International Journal of Machine Learning & Cybernetics, Springer</li>
+                              
+                              <li> (<b>2017</b>) <font color="red"><u>Journal article</u></font>: <a href="https://link.springer.com/article/10.1007/s11042-017-4373-y" target="_blank">PHDIndic_11: Page-level handwritten document image dataset of 11 official Indic scripts for script identification.</a> Multimedia tools and applications, Springer</li>
+                              
+                              <li> (<b>2017</b>) <font color="red"><u>Journal article</u></font>: <a href="https://link.springer.com/article/10.1007/s13042-016-0623-y" target="_blank"> Arrow detection in biomedical images using sequential classifier.</a> International Journal of Machine Learning & Cybernetics, Springer</li>
+                              
+                              <li> (<b>2017</b>) <font color="red"><u>Journal article</u></font>: <a href="http://www.sciencedirect.com/science/article/pii/S0019570716302530" target="_blank"> Edge map analysis in chest X-rays for automatic pulmonary abnormality screening.</a> Indian Journal of Tuberculosis, 64(02).</li>
+                              
+                              <li> (<b>2017</b>) <font color="red"><u>Journal article</u></font>: <a href="http://www.worldscientific.com/doi/abs/10.1142/S0218001417530032" target="_blank">Separating Indic Scripts with matra for Effective Handwritten Script Identification in Multi-Script Documents.</a> International Journal of Pattern Recognition & Artifiicial Intelligence (IJPRAI), World Scientific 31(6): 1-18</li>
+                              
+                              <li> (<b>2017</b>) <font color="red"><u>Journal article</u></font>: <a href="https://link.springer.com/article/10.1007/s13042-017-0645-0" target="_blank"> Agreeing to disagree: active learning with noisy labels without crowdsourcing.</a> International Journal of Machine Learning & Cybernetics, Springer</li>
+                              
+                              <li> (<b>2017</b>) <font color="red"><u>Journal article</u></font>: <a href="http://www.worldscientific.com/doi/abs/10.1142/S0218001417570038" target="_blank">Line Segment-Based Stitched Multipanel Figure Separation for Effective Biomedical CBIR.</a> International Journal of Pattern Recognition & Artifiicial Intelligence (IJPRAI), World Scientific 31(6): 1-18</li>
+                              
+                              <li> (<b>2017</b>) <font color="red"><u>Guest editor</u></font> of the specal issue: <a href="http://www.igi-global.com/journal/international-journal-computer-vision-image/1181" target="_blank">International Journal of Computer Vision and Image Processing, Vol. 07 Issue. 02</a>, IGI Global. </li>
+                              <IMG src="images/ccis-vol709.png" style="width:150px;height:210px;" ALIGN= "RIGHT" HSPACE="5" VSPACE="5"/>
+                              
+                              <li> (<b>2017</b>)  <font color="red"><u>International scientific committee</u></font> of <a href="http://grec2017.loria.fr/" target="_blank">Human-Machine Interaction Summer School (HMISS)</a>, Basilicata, ITALY. </li>
+                              
+                              <li> (<b>2017</b>) <font color="red"><u>Journal article</u></font>: Foreign Circular Element Detection in Chest X-rays for Effective Automated Pulmonary Abnormality Screening. <a href="http://www.igi-global.com/journal/international-journal-computer-vision-image/1181" target="_blank">International Journal of Computer Vision and Image Processing</a> (IJCVIP), IGI Global</li>
+                              
+                              <li> (<b>2017</b>) <font color="red"><u>MS Thesis by research</u></font> (student: Fatema T. Zohora): Foreign Element Detection in Chest X-ray Images, Department of Computer Science, University of South Dakota (USD) [Thesis supervisor]</li>
+                              
+                              <li> (<b>2017</b>) <font color="red"><u>Journal article</u></font>: Word-level multi-script Indic document image dataset and baseline results on script identification. <a href="http://www.igi-global.com/journal/international-journal-computer-vision-image/1181" target="_blank">International Journal of Computer Vision and Image Processing</a> (IJCVIP), IGI Global</li>
+                              
+                              <li> (<b>2017</b>)  <font color="red"><u>Editor</u></font> of a book entitled <u>Recent Trends in Image Processing and Pattern Recognition</u>: <a href="https://link.springer.com/book/10.1007/978-981-10-4859-3" target="_blank"> Communications in Computer and Information Science (CCIS) series, Vol. 709</a>, Springer.</li>
+                              
+                              <li> (<b>2017</b>)  <font color="red"><u>Program committee</u></font> of <a href="http://grec2017.loria.fr/" target="_blank">GREC 2017</a>, Kyoto, JAPAN (<u>the only graphics recognition event in the domain</u>). </li>
+                              
+                              <li> (<b>2017</b>)  <font color="red"><u>Program committee</u></font> of <a href="http://u-pat.org/ICDAR2017/" target="_blank">ICDAR 2017</a>, Kyoto, JAPAN (<u>the only document analysis conference in the domain</u>). </li>
+                           </ul>
+                           </p>    
+                           
+                        </div>
+                     </div>
+                       
+                       
+                       
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="col-md-12 footercl">
+            <hr>
+            <div class="col-md-6 footercon">
+               <span style="color:#000; style="background-color:#e0e0e0; font-size:18px;"><a href ="http://www.usd.edu/csci" target = "blank"><b>Department of Computer Science</b></a></span>
+               <br><br>
+               <span><a href ="http://www.usd.edu" target = "blank"><b>University of South Dakota</b></a></span><br>
+               <span><b>414 E. Clark Street</b></span><br>
+               <span><b>Office #204, Arts & Sciences (Building)</b></span><br>
+               <span><b>Vermillion, SD 57069</b></span><br>
+            </div>
+            <div class="col-md-6 footerimg">
+               <!-- 
+               <img src="images/logo.png" class="img-responsive">
+                -->
+            </div>
+         </div>
+      </div>
+      <div id="myModal" class="modal">
+         <span class="close">&times;</span>
+         <img class="modal-content" id="img01">
+         <div id="caption"></div>
+      </div>
+   </body>
+</html>
